@@ -1,0 +1,103 @@
+.hero {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 442px;
+  margin-bottom: 92px;
+  background: {
+    image: url("../img/bg-hero-mobile.jpg");
+    repeat: no-repeat;
+    position: top center;
+    size: cover;
+  }
+
+  &:before {
+    position: absolute;
+    bottom: -99px;
+    left: 50%;
+    width: 263px;
+    height: 297px;
+    z-index: 2;
+    margin-left: 5px;
+    transform: translate(-50%, 0);
+    background: {
+      image: url("../img/hero-box.png");
+      repeat: no-repeat;
+      size: contain;
+    }
+    pointer-events: none;
+    content: '';
+  }
+
+  &__circle {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 295px;
+    height: 309px;
+    z-index: 1;
+    padding: 78px 5px;
+    font-size: 30px;
+    color: $white;
+    line-height: 1.035;
+    text-align: center;
+    background: {
+      image: url("../img/hero-circle.png");
+      repeat: no-repeat;
+      size: contain;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 400;
+    }
+  }
+}
+@media (min-width: $phone-landscape) {
+  .hero {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .hero {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .hero {
+
+  }
+}
+@media (min-width: $desktop) {
+  .hero {
+    height: 652px;
+    margin-bottom: 17px;
+    background-image: url("../img/bg-hero.jpg");
+
+    &:before {
+      bottom: -167px;
+      left: 1319px;
+      width: 575px;
+      height: 652px;
+      transform: none;
+    }
+
+    &__circle {
+      top: 39px;
+      left: calc(50% + 109px);
+      width: 504px;
+      height: 527px;
+      padding-top: 150px;
+      font-size: 51.5px;
+
+      h1 {
+        margin-bottom: 8px;
+        font-size: 69px;
+      }
+    }
+  }
+}
+

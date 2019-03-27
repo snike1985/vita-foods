@@ -1,0 +1,160 @@
+.contacts {
+  padding: 24px 10px 33px;
+  background-color: #ea7e80;
+
+  &__logo {
+    position: relative;
+    display: block;
+    max-width: 359px;
+    margin: 0 auto 15px;
+    padding: 0 3px 33px;
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 104px;
+      height: 5px;
+      transform: translate(-50%, 0);
+      background-color: $white;
+      content: '';
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__form {
+
+  }
+
+  &__submit {
+    display: block;
+    width: 125px;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: $white;
+    background: $info-gray;
+    transition: background .15s ease-in-out;
+
+    &:hover {
+      background-color: $hover-gray;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 13px;
+    font-size: 24px;
+    color: $white;
+    letter-spacing: -0.7px;
+  }
+
+  &__group {
+    display: block;
+    margin-bottom: 18px;
+
+    input {
+      display: block;
+      width: 100%;
+      height: 26px;
+      padding: 10px;
+      color: $info-gray;
+      background-color: $white;
+      border: 1px solid $border;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 16.256px;
+    color: $white;
+  }
+
+  .nice-checkbox {
+    display: block;
+    margin-bottom: 25px;
+    padding-top: 11px;
+    color: $white;
+  }
+}
+@media (min-width: $phone-landscape) {
+  .contacts {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .contacts {
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1185px;
+      padding-left: 13px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      margin: 0;
+      padding: 4px 0 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__form {
+      width: calc(100% - 379px);
+      max-width: 680px;
+    }
+
+    &__fields {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .contacts__group {
+        width: calc(50% - 7px);
+      }
+    }
+
+    &__title {
+      margin-bottom: 19px;
+    }
+
+    &__group {
+      margin-bottom: 24px;
+
+      input {
+        height: 34px;
+      }
+    }
+
+    &__submit {
+      margin: 0;
+    }
+
+    .nice-checkbox {
+      margin-bottom: 32px;
+      padding-top: 13px;
+    }
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .contacts {
+    padding: 79px 10px 137px;
+  }
+}
+@media (min-width: $desktop) {
+  .contacts {
+
+  }
+}
+

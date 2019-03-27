@@ -1,0 +1,112 @@
+.footer {
+  position: relative;
+  padding: 86px 10px 22px;
+  text-align: center;
+  color: $black;
+  font-size: 13.5px;
+
+  &:after {
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    width: 320px;
+    height: 85px;
+    background: {
+      image: url("../img/wave.png");
+      repeat: no-repeat;
+      position: center;
+      size: contain;
+    };
+    pointer-events: none;
+    content: '';
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 14px;
+
+    img {
+      display: block;
+      width: 160px;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+
+  a {
+    color: $black;
+  }
+
+  dl {
+    display: block;
+    padding-top: 13px;
+
+    dt {
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    dd {
+      display: inline-block;
+    }
+  }
+
+  &__mail {
+
+    a{
+      color: $link;
+    }
+  }
+}
+@media (min-width: $phone-landscape) {
+  .footer {
+
+  }
+}
+@media (min-width: $tablet-portrait) {
+  .footer {
+
+  }
+}
+@media (min-width: $tablet-landscape) {
+  .footer {
+
+  }
+}
+@media (min-width: $desktop) {
+  .footer {
+    padding: 103px 10px 138px;
+    text-align: left;
+    font-size: 17.61px;
+
+    &:after {
+      top: 42px;
+      left: calc(50% + 207px);
+      width: 760px;
+      height: 189px;
+    }
+
+    &__logo {
+      position: absolute;
+      bottom: -16px;
+      left: 0;
+
+      img {
+        width: 253px;
+        margin: 0;
+      }
+    }
+
+    &__wrap {
+      position: relative;
+      max-width: 1166px;
+      margin: 0 auto;
+      padding-left: 305px;
+    }
+
+    dl {
+      display: inline-block;
+    }
+  }
+}
+
